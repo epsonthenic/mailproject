@@ -2,6 +2,7 @@ package com.example.mail_project.service;
 
 import com.example.mail_project.entity.CustomerLog;
 import com.example.mail_project.entity.LineDataImg;
+import com.example.mail_project.entity.MasterDataDetail;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
@@ -62,7 +63,7 @@ public interface AppMailDataService {
 
     void SaveLineImg(String json);
 
-
+    List<MasterDataDetail> findByMasterDataDetai(String variable1);
 
     //ResponseEntity<String> seveLineTextToEmail(String jsonn);
 

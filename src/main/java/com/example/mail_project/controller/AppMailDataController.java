@@ -2,6 +2,7 @@ package com.example.mail_project.controller;
 
 import com.example.mail_project.entity.CustomerLog;
 import com.example.mail_project.entity.LineDataImg;
+import com.example.mail_project.entity.MasterDataDetail;
 import com.example.mail_project.service.AppMailDataService;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -155,6 +156,9 @@ public class AppMailDataController {
     public List<CustomerLog>  findByMsgAndType(@RequestParam ("Msg")String msg,@RequestParam ("type")String type) throws  UnsupportedEncodingException {
         return appMailDataService.findByMsgAndType(msg, type);
     }
-
+    @GetMapping("/getkeyword")
+    public List<MasterDataDetail>  findByMasterDataDetai(@RequestParam ("variable1")String variable1){
+        return appMailDataService.findByMasterDataDetai(variable1);
+    }
 
 }
