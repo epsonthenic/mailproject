@@ -3,8 +3,10 @@ package com.example.mail_project.service;
 
 import com.example.mail_project.entity.CustomerLog;
 import com.example.mail_project.entity.LineDataImg;
+import com.example.mail_project.entity.MasterDataDetail;
 import com.example.mail_project.repository.CustomerLogRepository;
 import com.example.mail_project.repository.LineDataImgRepository;
+import com.example.mail_project.repository.MasterDataDetailRepository;
 import com.google.gson.Gson;
 
 import org.slf4j.Logger;
@@ -22,6 +24,9 @@ public class AppMailServiceImp implements AppMailDataService {
 
     @Autowired
     private LineDataImgRepository lineDataImgRepository;
+
+    @Autowired
+    private MasterDataDetailRepository masterDataDetailRepository;
 
     private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
@@ -164,5 +169,10 @@ public class AppMailServiceImp implements AppMailDataService {
     @Override
     public List<CustomerLog> findByMsgAndType(String msg, String type) {
         return customerLogRepository.findByMsgContainingAndTypeContaining(msg,type);
+    }
+
+    @Override
+    public List<MasterDataDetail> findByMasterDataDetai(String variable1) {
+        return masterDataDetailRepository.findByMasterDataDetai(variable1);
     }
 }
