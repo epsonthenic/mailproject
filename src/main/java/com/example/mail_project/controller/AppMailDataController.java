@@ -161,8 +161,8 @@ public class AppMailDataController {
 //        return appMailDataService.findByMasterDataDetai(variable1);
 //    }
     @GetMapping("/getkeyword")
-    public List<MasterDataDetail>MasterDatakey(@RequestParam ("id") Long id){
-        return appMailDataService.MasterDatakey(id);
+    public List<MasterDataDetail>MasterDatakey(@RequestParam ("id") Long id,@RequestParam ("code") String code){
+        return appMailDataService.MasterDatakey(id,code);
     }
 
 }

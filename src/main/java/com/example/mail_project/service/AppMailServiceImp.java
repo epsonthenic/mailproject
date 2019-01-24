@@ -177,7 +177,7 @@ public class AppMailServiceImp implements AppMailDataService {
 //    }
 
     @Override
-    public List<MasterDataDetail> MasterDatakey(Long id) {
-        return masterDataDetailRepository.findMasterDataDetailsByIdEquals(id);
+    public List<MasterDataDetail> MasterDatakey(Long id,String code) {
+        return masterDataDetailRepository.findMasterDataDetailsByIdEquals(id,code);
     }
 }
