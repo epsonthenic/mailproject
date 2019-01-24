@@ -65,7 +65,7 @@ public class LineBotController {
         //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         //DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDateTime("yyyy-MM-dd ");
         //DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         OffsetDateTime localDate = OffsetDateTime.now();
         boolean hasText = text.contains("@");
         boolean hasText1 = text.contains("NOT");
@@ -79,7 +79,7 @@ public class LineBotController {
                     new TextMessage("ระบบได้ทำการบันทึกแล้ว")
             ));
             String json = "{ \"send_To\" : \"SS\",\"msg\" : \"" + text + "\" , \"sentDate\" : \""+dtf.format(localDate)+"\",\"idline\":\""+ userId +"\",\"type\":\"LINE\",\"status\":\"wait\"}";
-            appMailDataService.SaveByJsonCus(json);
+            appMailDataService.SaveLineText(json);
             //appMailDataService.SaveByJsonCus(JsonList.get(i));
         }
         else if ((hasText == true) && (ListKeyword.checkTextMatches(text) == true)) {
@@ -94,7 +94,7 @@ public class LineBotController {
                                         new TextMessage("ระบบได้ทำการบันทึกแล้ว")
                                 ));
                                 String json = "{\"sender\" : \" \" , \"send_To\" : \"" + sender_Totext + "\", \"subject\" : \"" + Subjecttext + "\" , \"email\":\"null\", \"msg\" : \"" + msgtext + "\" , \"sentDate\" : \"" + dtf.format(localDate) + "\" , \"status\" : \"wait\" , \"type\" : \"LINE\" , \"level\":\"null\", \"idline\" : \"" + userId + "\"}";
-                                appMailDataService.SaveByJsonCus(json);
+                                appMailDataService.SaveLineText(json);
                             });
                 }
             }
@@ -107,7 +107,7 @@ public class LineBotController {
         ImageMessageContent message = event.getMessage();
         String replyToken = event.getReplyToken();
         String userId = event.getSource().getUserId();
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         OffsetDateTime localDate = OffsetDateTime.now();
         try {
             MessageContentResponse response = lineMessagingClient.getMessageContent(
