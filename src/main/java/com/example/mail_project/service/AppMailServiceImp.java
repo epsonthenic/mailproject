@@ -171,8 +171,13 @@ public class AppMailServiceImp implements AppMailDataService {
         return customerLogRepository.findByMsgContainingAndTypeContaining(msg,type);
     }
 
+//    @Override
+//    public List<MasterDataDetail> findByMasterDataDetai(String variable1) {
+//        return masterDataDetailRepository.findByMasterDataDetai(variable1);
+//    }
+
     @Override
-    public List<MasterDataDetail> findByMasterDataDetai(String variable1) {
-        return masterDataDetailRepository.findByMasterDataDetai(variable1);
+    public List<MasterDataDetail> MasterDatakey(Long id) {
+        return masterDataDetailRepository.findMasterDataDetailsByIdEquals(id);
     }
 }

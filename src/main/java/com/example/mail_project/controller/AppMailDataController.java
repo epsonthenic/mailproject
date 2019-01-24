@@ -156,9 +156,13 @@ public class AppMailDataController {
     public List<CustomerLog>  findByMsgAndType(@RequestParam ("Msg")String msg,@RequestParam ("type")String type) throws  UnsupportedEncodingException {
         return appMailDataService.findByMsgAndType(msg, type);
     }
+//    @GetMapping("/getkeyword")
+//    public List<MasterDataDetail>  findByMasterDataDetai(@RequestParam ("variable1")String variable1){
+//        return appMailDataService.findByMasterDataDetai(variable1);
+//    }
     @GetMapping("/getkeyword")
-    public List<MasterDataDetail>  findByMasterDataDetai(@RequestParam ("variable1")String variable1){
-        return appMailDataService.findByMasterDataDetai(variable1);
+    public List<MasterDataDetail>MasterDatakey(@RequestParam ("id") Long id){
+        return appMailDataService.MasterDatakey(id);
     }
 
 }
