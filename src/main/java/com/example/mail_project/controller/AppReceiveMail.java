@@ -11,6 +11,7 @@ import javax.mail.Message.RecipientType;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMultipart;
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
@@ -38,6 +39,8 @@ public class AppReceiveMail {
 
         autoReply2 a = new autoReply2();
         a.autoReply(true);
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
         try {
 
@@ -138,7 +141,8 @@ public class AppReceiveMail {
                         //part ที่มีไฟล์ attachment
                         if (Part.ATTACHMENT.equalsIgnoreCase(part.getDisposition())) {
 
-                            String fileName = mes.getSentDate() + "-"+RandomNumber()+"-"+ part.getFileName();//rename วันที่ + ชื่อไฟล์
+                            String fileNameDate=formatter.format(mes.getSentDate());
+                            String fileName = fileNameDate+ "-"+RandomNumber()+"-"+ part.getFileName();//rename วันที่ + ชื่อไฟล์
                             attachFiles += fileName + ", ";
                             System.out.println("Attachments: " + attachFiles);
                             part.saveFile(saveDirectory + File.separator + fileName);//save file
@@ -150,9 +154,10 @@ public class AppReceiveMail {
                         if (part.isMimeType("image/jpeg") || part.isMimeType("image/png")) {
 
                             System.out.print("image");
-                            String fileName = mes.getSentDate() + "-"+RandomNumber()+"-"+ part.getFileName();
+                            String fileNameDate=formatter.format(mes.getSentDate());
+                            String fileName = fileNameDate + "-"+RandomNumber()+"-"+ part.getFileName();
                             System.out.println("[" + fileName + "]");
-
+                            attachFiles += fileName + ", ";
                             File f = new File(saveDirectory + File.separator + fileName);
 
                             boolean check = new File(saveDirectory + File.separator, fileName).exists();
@@ -160,8 +165,6 @@ public class AppReceiveMail {
                             if (check == false) {//ถ้าไม่มีไฟล์
                                 System.out.println("Download : " + fileName);
                                 part.saveFile(saveDirectory + File.separator + fileName);//ดาวน์โหลดไฟล์
-                                //base64_test base64 = new base64_test();// เข้ารหัส Base64
-                                //System.out.println("BASE64ENCODER : [" + base64.encoder(f.toString()) + "]");
 
                             } else if (check == true) { //มีไฟล์แล้ว
                                 System.out.println("Have this file");//แสดงข้อความ
@@ -185,7 +188,9 @@ public class AppReceiveMail {
 
                 System.out.println("------------------------------------------------------------");
 
-                json = "{\"sender\":\"" + sender + "\",\"send_To\":\"" + email_id + "\",\"email\":\"" + email + "\",\"msg\":\"" + result + "\",\"attachments\":\"" + attachFiles + "\",\"responsible\":\"----\",\"sentDate\":\"" + mes.getSentDate() + "\",\"status\":\"wait..\",\"type\":\"email\",\"subject\":\"" + mes.getSubject() + "\",\"CC\":\"" + CC + "\",\"BCC\":\"" + BCC + "\"}";
+
+
+                json = "{\"sender\":\"" + sender + "\",\"send_To\":\"" + email_id + "\",\"email\":\"" + email + "\",\"msg\":\"" + result + "\",\"attachments\":\"" + attachFiles + "\",\"responsible\":\"----\",\"sentDate\":\"" + formatter.format(mes.getSentDate()) + "\",\"status\":\"wait..\",\"type\":\"email\",\"subject\":\"" + mes.getSubject() + "\",\"CC\":\"" + CC + "\",\"BCC\":\"" + BCC + "\"}";
                 JsonList.add(json);
             }
 
@@ -200,19 +205,26 @@ public class AppReceiveMail {
         return JsonList;
     }
 
-    //method ที่ทำหน้าที่ getText จาก email ออกมา
+    //method ที่ทำหน้าที่ getText content จาก email ออกมา
     public String getTextFromMimeMultipart(Multipart mimeMultipart, int partcount) throws Exception {
         String result = "";
+        String saveDirectory="/home/pang/File_mail";
+        String fileName = "";
         int partCount = mimeMultipart.getCount();
         for (int i = 0; i < partCount; i++) {
             BodyPart bodyPart = mimeMultipart.getBodyPart(i);
             if (bodyPart.isMimeType("text/plain")) {
                 result = result + "\n" + bodyPart.getContent();
                 break;
-            } else if (bodyPart.isMimeType("text/html")) {
+            }else if ((bodyPart.isMimeType("image/jpg"))||(bodyPart.isMimeType("image/png"))) {
                 MimeBodyPart part = (MimeBodyPart) mimeMultipart.getBodyPart(partcount);
-
-            } else if (bodyPart.getContent() instanceof MimeMultipart) {
+                fileName = part.getFileName();
+                part.saveFile(saveDirectory + File.separator + fileName);
+                result = result + "\n" + "[-"+fileName+"-]";
+                break;
+            }else if (bodyPart.isMimeType("text/html")) {
+                MimeBodyPart part = (MimeBodyPart) mimeMultipart.getBodyPart(partcount);
+            }else if (bodyPart.getContent() instanceof MimeMultipart) {
                 result = result + getTextFromMimeMultipart((MimeMultipart) bodyPart.getContent(), partcount);
             }
         }

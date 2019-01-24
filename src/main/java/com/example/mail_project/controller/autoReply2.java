@@ -8,11 +8,19 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.search.FlagTerm;
 import java.io.InputStream;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 public class autoReply2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String dateInString = "07/06/2013 00:00:00";
+        Date date = formatter.parse(dateInString);
 
+        System.out.println(date);
+        System.out.println(formatter.format(date));
     }
     public void autoReply(boolean Seen){
         try {

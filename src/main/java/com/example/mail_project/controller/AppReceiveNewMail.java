@@ -11,6 +11,7 @@ import javax.mail.Message.RecipientType;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.search.FlagTerm;
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
@@ -36,6 +37,8 @@ public class AppReceiveNewMail {
 
         autoReply2 a = new autoReply2();
         a.autoReply(false);
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
         try {
             //set properties
@@ -149,7 +152,7 @@ public class AppReceiveNewMail {
                             //messageContent = part.getContent().toString();
                             // this part is attachment
 
-                            String fileName = mes.getSentDate() + "-"+appReceiveMail.RandomNumber()+"-"+ part.getFileName();//rename วันที่ + ชื่อไฟล์
+                            String fileName = formatter.format(mes.getSentDate()) + "-"+appReceiveMail.RandomNumber()+"-"+ part.getFileName();//rename วันที่ + ชื่อไฟล์
                             attachFiles += fileName + ", ";
                             System.out.println("Attachments: " +attachFiles);
                             part.saveFile(saveDirectory + File.separator + fileName);
@@ -161,7 +164,7 @@ public class AppReceiveNewMail {
                         if(part.isMimeType("image/jpeg")||part.isMimeType("image/png")) {
 
                             System.out.print("image");
-                            String fileName = mes.getSentDate() + "-"+appReceiveMail.RandomNumber()+"-"+ part.getFileName();
+                            String fileName = formatter.format(mes.getSentDate()) + "-"+appReceiveMail.RandomNumber()+"-"+ part.getFileName();
                             System.out.println("["+fileName+"]");
 
                             File f = new File(saveDirectory + File.separator + fileName);
@@ -198,7 +201,8 @@ public class AppReceiveNewMail {
                 System.out.println("------------------------------------------------------------");
 
 
-                json = "{\"sender\":\""+sender+"\",\"send_To\":\""+email_id+"\",\"email\":\""+emil+"\",\"msg\":\""+result+"\",\"attachments\":\""+attachFiles+"\",\"responsible\":\"----\",\"sentDate\":\""+mes.getSentDate()+"\",\"status\":\"wait..\",\"type\":\"email\",\"subject\":\""+mes.getSubject()+"\",\"CC\":\""+CC+"\",\"BCC\":\""+BCC+"\"}";
+
+                json = "{\"sender\":\""+sender+"\",\"send_To\":\""+email_id+"\",\"email\":\""+emil+"\",\"msg\":\""+result+"\",\"attachments\":\""+attachFiles+"\",\"responsible\":\"----\",\"sentDate\":\""+formatter.format(mes.getSentDate())+"\",\"status\":\"wait..\",\"type\":\"email\",\"subject\":\""+mes.getSubject()+"\",\"CC\":\""+CC+"\",\"BCC\":\""+BCC+"\"}";
 
                 JsonList.add(json);
             }
