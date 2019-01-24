@@ -65,7 +65,7 @@ public class LineBotController {
         //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         //DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDateTime("yyyy-MM-dd ");
         //DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         OffsetDateTime localDate = OffsetDateTime.now();
         boolean hasText = text.contains("@");
         boolean hasText1 = text.contains("NOT");
@@ -107,7 +107,7 @@ public class LineBotController {
         ImageMessageContent message = event.getMessage();
         String replyToken = event.getReplyToken();
         String userId = event.getSource().getUserId();
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         OffsetDateTime localDate = OffsetDateTime.now();
         try {
             MessageContentResponse response = lineMessagingClient.getMessageContent(

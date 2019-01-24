@@ -64,7 +64,7 @@ public interface AppMailDataService {
     void SaveLineImg(String json);
 
 //    List<MasterDataDetail> findByMasterDataDetai(String variable1);
-    List<MasterDataDetail> MasterDatakey(Long id);
+    List<MasterDataDetail> MasterDatakey(Long id,String code);
 
     //ResponseEntity<String> seveLineTextToEmail(String jsonn);
 

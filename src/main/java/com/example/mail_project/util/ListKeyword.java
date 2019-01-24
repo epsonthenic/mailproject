@@ -40,6 +40,12 @@ public class ListKeyword{
         LIST_KEYWORD.add("ไม่สมบูรณ์");
         LIST_KEYWORD.add("ไม่สมบูร");
         LIST_KEYWORD.add("แย่");
+        LIST_KEYWORD.add("ค้าง");
+        LIST_KEYWORD.add("ยังไม่ได้");
+        LIST_KEYWORD.add("ไม่ได้");
+        LIST_KEYWORD.add("Bug");
+        LIST_KEYWORD.add("bug");
+
         return null;
     }
 
@@ -50,6 +56,8 @@ public class ListKeyword{
         LIST_PROGRAN.add("งาน");
         LIST_PROGRAN.add("เว็บ");
         LIST_PROGRAN.add("เว็ป");
+        LIST_PROGRAN.add("หน้าจอ");
+
         return null;
     }
 
