@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /home/pang/work git/nick/mailproject/src/main/java/com/example/mail_project/controller/AppReceiveMail.java
 /home/pang/work git/nick/mailproject/src/main/java/com/example/mail_project/service/AppMailDataService.java
 /home/pang/work git/nick/mailproject/src/main/java/com/example/mail_project/controller/AppMailDataController.java
@@ -19,6 +20,8 @@
 /home/pang/work git/nick/mailproject/src/main/java/com/example/mail_project/controller/LineBotConfigure.java
 /home/pang/work git/nick/mailproject/src/main/java/com/example/mail_project/controller/AppReceiveNewMail.java
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
 /home/nick/Desktop/Testpro/work-git/mailproject/src/main/java/com/example/mail_project/MailProjectApplication.java
 /home/nick/Desktop/Testpro/work-git/mailproject/src/main/java/com/example/mail_project/controller/LineBotConfigure.java
 /home/nick/Desktop/Testpro/work-git/mailproject/src/main/java/com/example/mail_project/controller/AppReceiveMail.java
@@ -42,4 +45,7 @@
 /home/nick/Desktop/Testpro/work-git/mailproject/src/main/java/com/example/mail_project/controller/CheckThisEmail.java
 /home/nick/Desktop/Testpro/work-git/mailproject/src/main/java/com/example/mail_project/entity/CustomerLog.java
 /home/nick/Desktop/Testpro/work-git/mailproject/src/main/java/com/example/mail_project/repository/MasterDataDetailRepository.java
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7

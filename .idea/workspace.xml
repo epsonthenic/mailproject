@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="ae454d3a-5a3d-4ae4-978e-6c764bc6cfba" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dpseingne.iml" beforeDir="false" />
@@ -15,6 +16,8 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mail_project/controller/AppReceiveNewMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mail_project/controller/AppReceiveNewMail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mail_project/controller/autoReply2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mail_project/controller/autoReply2.class" afterDir="false" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     <list default="true" id="4f33ac15-5a88-4d95-9705-6712642827b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/AppMailDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/AppMailDataController.java" afterDir="false" />
@@ -28,6 +31,9 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mail_project/service/AppMailDataService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mail_project/service/AppMailDataService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/mail_project/service/AppMailServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mail_project/service/AppMailServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
@@ -39,6 +45,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -118,6 +125,8 @@
       </file>
     </leaf>
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -133,6 +142,9 @@
       <find>variable1</find>
       <find>findByMasterdataAndVariable1</find>
     </findStrings>
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
   </component>
   <component name="Git.Settings">
@@ -142,12 +154,15 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/autoReply2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/AppReceiveNewMail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/AppReceiveMail.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/entity/MasterData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/LineBotController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/repository/MasterDataRepository.java" />
@@ -156,21 +171,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/service/AppMailDataService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/AppMailDataController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/mail_project/repository/MasterDataDetailRepository.java" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="217" />
     <option name="y" value="180" />
     <option name="width" value="1305" />
     <option name="height" value="715" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     <option name="x" value="441" />
     <option name="y" value="31" />
     <option name="width" value="731" />
     <option name="height" value="544" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -180,7 +204,10 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane" />
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
 =======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
       <pane id="ProjectPane">
@@ -231,8 +258,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <item name="resources" type="462c0819:PsiDirectoryNode" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mail_project" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
@@ -254,6 +284,9 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mail_project" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
             </path>
           </expand>
@@ -261,6 +294,10 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
 =======
       <pane id="PackagesPane" />
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
@@ -268,6 +305,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="DatabaseDriversLRU" value="h2&#10;mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -278,6 +316,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548181529179" />
@@ -290,6 +330,9 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/example/mail_project/entity" />
     </key>
   </component>
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -303,6 +346,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="RunManager" selected="Application.autoReply2">
     <configuration name="autoReply2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -321,6 +365,9 @@
 =======
   <component name="RunManager">
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
+  <component name="RunManager">
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     <configuration name="MailProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dpseingne" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mail_project.MailProjectApplication" />
@@ -329,11 +376,14 @@
       </method>
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <recent_temporary>
       <list>
         <item itemvalue="Application.autoReply2" />
       </list>
     </recent_temporary>
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
 =======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
   </component>
@@ -343,6 +393,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <changelist id="ae454d3a-5a3d-4ae4-978e-6c764bc6cfba" name="Default Changelist" comment="" />
       <created>1548172917831</created>
       <option name="number" value="Default" />
@@ -351,6 +402,8 @@
       <workItem from="1548172920662" duration="639000" />
       <workItem from="1548207037548" duration="16650000" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
       <changelist id="a4af9d36-f1e8-44dd-828b-81a955c74cf3" name="Default Changelist" comment="" />
       <created>1548174113063</created>
       <option name="number" value="Default" />
@@ -358,11 +411,15 @@
       <updated>1548174113063</updated>
       <workItem from="1548174115758" duration="8011000" />
       <workItem from="1548208307833" duration="71000" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="17289000" />
   </component>
@@ -372,12 +429,17 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25371966" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     <option name="totallyTimeSpent" value="8086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="-4" width="1325" height="772" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24941361" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -387,10 +449,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Messages" weight="0.32868218" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
+=======
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
 =======
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -402,17 +470,23 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.26666668" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -422,7 +496,11 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="right" id="Database" order="6" visible="true" weight="0.32889584" />
+=======
+      <window_info anchor="right" id="Database" order="6" />
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
 =======
       <window_info anchor="right" id="Database" order="6" />
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
@@ -435,6 +513,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -450,6 +529,8 @@
           <folding>
             <element signature="e#5629#5630#0" expanded="true" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/mail_project/controller/AppReceiveNewMail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -554,11 +635,15 @@
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="jar://$USER_HOME$/Dev/jdk1.8.0_191/src.zip!/java/text/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -596,6 +681,8 @@
         <state relative-caret-position="210">
           <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
 =======
+=======
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ser/std/CollectionSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
@@ -648,6 +735,9 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+<<<<<<< HEAD
+>>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
+=======
 >>>>>>> a085dc242777cd67d5c7b0c4e36e732ffe59ebd7
         </state>
       </provider>
